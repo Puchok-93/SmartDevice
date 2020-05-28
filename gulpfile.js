@@ -18,15 +18,15 @@ var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(csso())
+      .pipe(rename("style.min.css"))
+      .pipe(sourcemap.write("."))
+      .pipe(gulp.dest("build/css"))
+      .pipe(server.stream());
 });
 
 gulp.task("server", function () {
@@ -50,27 +50,27 @@ gulp.task("refresh", function (done) {
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.svgo()
+      ]))
 
-    .pipe(gulp.dest("source/img"));
+      .pipe(gulp.dest("source/img"));
 
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+      .pipe(webp({quality: 90}))
+      .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-*,htmlacademy*}.svg")
-    .pipe(svgstore({inlineSvg: true}))
-    .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("build/img"));
+      .pipe(svgstore({inlineSvg: true}))
+      .pipe(rename("sprite_auto.svg"))
+      .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
@@ -87,10 +87,10 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source//*.ico"
-    ], {
-      base: "source"
-    })
-  .pipe(gulp.dest("build"));
+  ], {
+    base: "source"
+  })
+      .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
