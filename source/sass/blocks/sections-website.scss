@@ -1,7 +1,6 @@
 .sections-website {
-    padding-top: 64px;
-
-    margin-left: 51px;
+  padding-top: 64px;
+  margin-left: 51px;
 }
 
 .sections-website__title {
@@ -40,10 +39,9 @@
 @media (max-width: $tablet) {
   .sections-website {
     margin-left: 0;
-}
+  }
 
-.sections-website-list {
-  columns: 1;
-}
-
+  .sections-website-list {
+    columns: 1;
+  }
 }
