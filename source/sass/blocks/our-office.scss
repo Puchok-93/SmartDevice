@@ -1,0 +1,39 @@
+.our-office {
+    padding-top: 64px;
+}
+
+.our-office__title {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1b2d37;
+
+  margin: 0;
+  margin-left: 2px;
+}
+
+.our-office-list {
+  @include list-reset();
+  margin-top: 24px;
+}
+
+.our-office-list__item {
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.our-office-list__link {
+  text-decoration: none;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+

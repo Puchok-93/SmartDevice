@@ -1,0 +1,29 @@
+.second-line-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 60px;
+  }
+
+  .second-line-footer__rights,
+  .second-line-footer__working-activity,
+  .second-line-footer__confidentiality-conditions,
+  .second-line-footer__developer {
+    font-family: $PTMono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1B2D37;
+    opacity: 0.5;
+  }
+
+  .first-line-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
