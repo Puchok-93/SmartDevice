@@ -11,24 +11,42 @@
 
 <body>
   <header>
-    <a>
-      <img src="#" alt="Логотип Smart Device">
+    <div class="wrapper">
+    <a class="header-logo">
+      <picture>
+          <source media="(mix-width: 767px)" srcset="img/smart-device-logo-mobile.png">
+            <img class="header-logo__image" src="img/smart-device-logo-desktop.png" width="52" height="52" alt="Логотип Smart Device">
+      </picture>
+      <div>
+      <p class="header-logo__title">Smart Device</p>
+      <p class="header-logo__subtitle">умные технологии</p>
+      </div>
     </a>
 
+    <nav class="main-navigation">
+
     <ul class="contacts-list">
-      <li class="contacts-list__item">
+      <li class="contacts-list__item contacts-list__item--email">
         <a class="contacts-list__link" href="mailto:info@sd.ru">
+          <svg class="contacts-list__link-icon contacts-list__link-icon--email">
+            <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+          </svg>
           <span>info@sd.ru</span>
         </a>
       </li>
-      <li class="contacts-list__item">
+      <li class="contacts-list__item contacts-list__item--phone">
         <a class="contacts-list__link" href="tel:+74950005252">
+          <svg class="contacts-list__link-icon contacts-list__link-icon--phone">
+            <use xlink:href="img/sprite_auto.svg#icon-phone-call"></use>
+          </svg>
           <span>+7 (495) 000 52 52</span>
         </a>
       </li>
     </ul>
 
     <button class="callback-button" type="button">Заказать звонок</button>
+  </nav>
+  </div>
   </header>
 
   <main>

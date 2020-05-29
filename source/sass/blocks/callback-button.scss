@@ -1,0 +1,38 @@
+.callback-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 45px;
+
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+
+  color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+@media (max-width: $tablet) {
+  .callback-button {
+    display: none;
+  }
+}

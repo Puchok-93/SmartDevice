@@ -1,0 +1,12 @@
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+  padding-top: 34px;
+}
+
+@media (max-width: $tablet) {
+  .main-navigation {
+    padding-top: 24px;
+  }
+}
