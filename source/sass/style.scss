@@ -2,12 +2,17 @@
 @import "variables.scss";
 @import "mixin.scss";
 @import "global.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/header-logo.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/callback-button.scss";
+@import "blocks/main-block.scss";
+@import "blocks/advantages.scss";
 @import "blocks/footer.scss";
+@import "blocks/first-line-footer";
 @import "blocks/footer-logo.scss";
+@import "blocks/working-activity.scss";
 @import "blocks/social-list.scss";
 @import "blocks/sections-website.scss";
 @import "blocks/our-office.scss";

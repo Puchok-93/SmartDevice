@@ -52,13 +52,19 @@
 
   <main>
     <section class="main-block">
-      <h1 class="main-block__title">Печатные платы</h1>
-      <p class="main-block__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="main-block__link" href="#">Получить бесплатню консультацию</a>
+      <div class="wrapper wrapper--main-block">
+        <div class="main-block-info">
+          <h1 class="main-block-info__title">Печатные платы</h1>
+          <p class="main-block-info__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="main-block-info__link" href="#">Получить бесплатную консультацию</a>
+          <a class="main-block-info__scroll" href="#">Скролл вниз</a>
+        </div>
+      </div>
     </section>
 
 
     <section class="advantages">
+      <div class="wrapper">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-list__item">
@@ -81,10 +87,11 @@
         </li>
         <li class="advantages-list__item">
           <h3 class="advantages-list__title">Персонализация стоимости</h3>
-          <p class="advantages-list__description">По желанию клиента мы обеспечиваем полную конфеденциальность.
+          <p class="advantages-list__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
           </p>
         </li>
       </ul>
+    </div>
     </section>
 
 
@@ -159,24 +166,36 @@
             </div>
           </a>
 
-          <p class="working activity">1999-2018 SD Service Devices</p>
+          <p class="working-activity">1999-2018 SD Service Devices</p>
 
           <ul class="social-list">
             <li class="social-list__item">
-              <a href="#"></a>
+              <a href="#">
+                <svg class="social-list__icon">
+                  <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-list__item">
-              <a href="#"></a>
+              <a href="#">
+                <svg class="social-list__icon">
+                  <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-list__item">
-              <a href="#"></a>
+              <a href="#">
+                <svg class="social-list__icon">
+                  <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="sections-website">
           <h4 class="sections-website__title">Разделы сайта</h4>
-          <ul class="sections-website-list">
+          <ul class="sections-website-list sections-website-list--closed">
             <li class="sections-website-list__item">
               <a class="sections-website-list__link" href="#">О компании</a>
             </li>
@@ -199,12 +218,14 @@
               <a class="sections-website-list__link" href="#">Контакты</a>
             </li>
           </ul>
+          <button class="sections-website__button" type="button"><span class="visually-hidden">Раскрыть
+              список</span></button>
         </div>
 
         <div class="our-office">
           <h4 class="our-office__title">Наш офис</h4>
           <ul class="our-office-list">
-            <li class="our-office-list__item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="our-office-list__item our-office-list__item--address">г. Мытищи, Олимпийский проспект, д.10</li>
             <li class="our-office-list__item">
               <a class="our-office-list__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
             </li>
@@ -215,6 +236,7 @@
               <a class="our-office-list__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
             </li>
           </ul>
+          <button class="our-office__button" type="button"><span class="visually-hidden">Раскрыть список</span></button>
         </div>
       </div>
 
@@ -226,6 +248,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

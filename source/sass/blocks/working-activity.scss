@@ -1,0 +1,32 @@
+.working-activity {
+  display: none;
+}
+
+
+@media (max-width: $tablet) {
+  .working-activity {
+    display: block;
+
+    font-family: $PTMono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #1b2d37;
+
+    opacity: 0.5;
+    padding-top: 22px;
+    margin-left: 31px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .working-activity {
+    padding-top: 13px;
+    margin-left: 0;
+  }
+}

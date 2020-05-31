@@ -1,0 +1,11 @@
+.first-line-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $mobile) {
+  .first-line-footer {
+    flex-direction: column;
+  }
+}
