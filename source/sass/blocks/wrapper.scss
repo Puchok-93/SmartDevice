@@ -7,6 +7,14 @@
 
   outline: 1px solid red;
 
+  &--about-company {
+    display: block;
+  }
+
+  &--services {
+    flex-direction: column;
+  }
+
   &--footer {
     flex-direction: column;
   }
@@ -20,6 +28,19 @@
 
     &--main-block {
       padding: 15px;
+    }
+
+
+  &--about-company {
+    padding: 15px;
+  }
+
+    &--advantages {
+      padding: 15px;
+    }
+
+    &--services {
+      padding: 10px;
     }
   }
 }

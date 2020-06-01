@@ -1,0 +1,146 @@
+.about-company {
+  padding-bottom: 110px;
+}
+
+
+.about-company__title {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: #666666;
+
+  margin: 0;
+  margin-left: 22.1%;
+
+  padding-top: 74px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    top: 79px;
+    left: -209px;
+    background-image: url("/img/year-desktop.png");
+  }
+}
+
+.about-company__description {
+  width: 69%;
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #666666;
+
+  margin: 0;
+  margin-left: 22.1%;
+
+  padding-top: 20.6px;
+}
+
+
+.about-company__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 45px;
+
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #00B2FF;
+
+  background-color: $white;
+  border: 1px solid #00B2FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin-top: 39px;
+  margin-left: 22.1%;
+}
+
+@media (max-width: $tablet) {
+  .about-company__title {
+    font-size: 32px;
+    line-height: 45px;
+
+    margin: 0;
+    margin-left: 26.1%;
+
+    padding-top: 26px;
+
+    &::after {
+      width: 244px;
+      height: 362px;
+      top: 23px;
+      left: -210px;
+      background-image: url("/img/year-tablet.png");
+    }
+  }
+
+  .about-company__description {
+    width: 73.8%;
+
+    margin: 0;
+    margin-left: 26.5%;
+
+    padding-top: 21.7px;
+  }
+
+  .about-company__link {
+    margin-top: 39px;
+    margin-left: 26.1%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about-company {
+    padding-bottom: 30px;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 39px;
+
+    margin: 0;
+    padding-top: 4px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .about-company__description {
+    width: 100%;
+
+    margin: 0;
+    padding-top: 20.2px;
+
+    &--hired {
+      padding-top: 39.8px;
+    }
+  }
+
+  .about-company__link {
+    margin-top: 39px;
+    margin-left: 0;
+  }
+}
