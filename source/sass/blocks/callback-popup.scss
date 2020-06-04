@@ -1,0 +1,248 @@
+.callback-popup-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.callback-popup-overlay--show {
+  display: block;
+}
+
+.callback-popup {
+  width: 490px;
+  min-height: 605px;
+  top: 14.4%;
+  left: 37.5%;
+  position: fixed;
+  z-index: 1000;
+  background-color: $blue;
+  display: none;
+}
+
+.callback-popup--show {
+  display: block;
+}
+
+.callback-popup__title {
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  color: $white;
+
+  margin: 0;
+  margin-left: 41px;
+
+  padding-top: 29px;
+}
+
+.callback-popup__subtitle {
+  width: 381px;
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  margin: 0;
+  margin-left: 41px;
+
+  padding-top: 12px;
+}
+
+
+.callback-popup-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 40px;
+  margin-top: 32px;
+}
+
+.callback-popup-form input[type="text"],
+.callback-popup-form input[type="tel"] {
+  width: 386px;
+
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 24px;
+  padding-top: 12.51px;
+  padding-bottom: 17.51px;
+
+  border: none;
+  outline: none;
+  color: $white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:focus {
+    outline: 1px solid $white;
+  }
+}
+
+.callback-popup-form input[type="tel"] {
+  margin-top: 30px;
+}
+
+.callback-popup-form input::placeholder,
+.callback-popup-form textarea::placeholder {
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.callback-popup-form textarea {
+  width: 386px;
+  height: 90px;
+
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 24px;
+  padding-top: 12px;
+
+  border: none;
+  outline: none;
+  color: $white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  margin-top: 30px;
+
+  &:focus {
+    outline: 1px solid $white;
+  }
+}
+
+.callback-popup-form button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 411px;
+  height: 45px;
+
+  font-family: $RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border: 1px solid $white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+
+  color: $white;
+  cursor: pointer;
+
+  margin-top: 31px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+
+.callback-popup-form__label {
+  width: 337px;
+  font-family: $PTMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $white;
+
+  opacity: 0.8;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.callback-popup-form__checkbox + .callback-popup-form__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.callback-popup-form__label::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 1px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid $white;
+}
+
+.callback-popup-form__checkbox:checked + .callback-popup-form__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7.5px 4.5px;
+}
+
+.callback-popup__button-close {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+
+  top: 17px;
+  right: 17px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: $white;
+    top: 9px;
+    left: -1px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 2px;
+    background-color: $white;
+    top: 9px;
+    left: -1px;
+    transform: rotate(-45deg);
+  }
+
+  &:focus {
+    outline: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

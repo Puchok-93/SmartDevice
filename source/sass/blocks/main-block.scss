@@ -87,6 +87,16 @@
 
   margin-left: 107px;
   margin-top: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .main-block-info__scroll {
@@ -106,6 +116,15 @@
 
   bottom: -147px;
   left: -24px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -207,6 +226,7 @@
     width: 287px;
 
     margin: 0;
+    margin-left: 3px;
     margin-top: 39px;
   }
 }

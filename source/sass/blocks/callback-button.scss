@@ -26,8 +26,11 @@
   &:hover,
   &:focus {
     background-color: $white;
-    border-color: $blue;
     color: $blue;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 

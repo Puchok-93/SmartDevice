@@ -109,5 +109,9 @@
     background-image: url("../img/icon-plus.svg");
     background-size: 16px 16px;
     background-position: center;
+
+    &--open {
+      background-image: url("../img/icon-minus.svg");
+    }
   }
 }

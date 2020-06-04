@@ -1,5 +1,6 @@
 footer {
   background-color: #fafafa;
+  flex-shrink: 0;
   position: relative;
 
   &::after {

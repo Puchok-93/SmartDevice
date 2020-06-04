@@ -5,8 +5,6 @@
   display: flex;
   justify-content: space-between;
 
-  outline: 1px solid red;
-
   &--about-company {
     display: block;
   }
@@ -15,6 +13,12 @@
     flex-direction: column;
   }
 
+  &--feedback {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--services,
   &--footer {
     flex-direction: column;
   }
@@ -26,16 +30,10 @@
       padding: 0;
     }
 
-    &--main-block {
-      padding: 15px;
-    }
-
-
-  &--about-company {
-    padding: 15px;
-  }
-
-    &--advantages {
+    &--main-block,
+    &--about-company,
+    &--advantages,
+    &--feedback {
       padding: 15px;
     }
 
