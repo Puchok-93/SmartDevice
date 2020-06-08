@@ -1,7 +1,7 @@
 .feedback {
   background-color: $blue;
   padding-bottom: 113px;
-  background-image: url("/img/background-footer.png");
+  background-image: url("../img/background-footer.png");
   background-repeat: no-repeat;
   background-position: 196px 94px;
 }
@@ -111,6 +111,7 @@
   background-color: rgba(25, 186, 255, 0.9);
 
   margin-top: 38px;
+  resize: none;
 
   &:focus {
     outline: 1px solid $white;

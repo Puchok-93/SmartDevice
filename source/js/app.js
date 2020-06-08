@@ -18,11 +18,6 @@ var ourOfficeListButton = document.querySelector('.our-office__button');
 
 var ESC_KEY = 27;
 
-if (window.matchMedia('screen and (min-width: 767px)').matches) {
-  sectionsWebsiteList.classList.add('hide');
-  ourOfficeList.classList.add('hide');
-}
-
 var setDefaultValues = function () {
   userName.style.border = 'none';
   userPhone.style.border = 'none';
@@ -54,14 +49,21 @@ var reductionDescription = function () {
   }
 };
 
+sectionsWebsiteList.classList.add('hide');
+sectionsWebsiteButtonList.classList.add('sections-website__button--closed');
+
 var openSectionsWebsiteList = function () {
-  sectionsWebsiteList.classList.toggle('hide');
-  sectionsWebsiteButtonList.classList.toggle('sections-website__button--open');
+  sectionsWebsiteList.classList.remove('hide');
+  sectionsWebsiteButtonList.classList.remove('sections-website__button--closed');
+  ourOfficeList.classList.add('hide');
+  ourOfficeListButton.classList.add('our-office__button--closed');
 };
 
 var openOurOfficeList = function () {
-  ourOfficeList.classList.toggle('hide');
-  ourOfficeListButton.classList.toggle('our-office__button--open');
+  sectionsWebsiteList.classList.add('hide');
+  sectionsWebsiteButtonList.classList.add('sections-website__button--closed');
+  ourOfficeList.classList.remove('hide');
+  ourOfficeListButton.classList.remove('our-office__button--closed');
 };
 
 sectionsWebsiteButtonList.addEventListener('click', openSectionsWebsiteList);

@@ -1,6 +1,6 @@
 .main-block {
   background-color: #1b2d37;
-  background-image: url("/img/circuit-boards-desktop.png"), url("/img/background-pattern.png");
+  background-image: url("../img/circuit-boards-desktop.png"), url("../img/background-pattern.png");
   background-size: 707px, cover;
   background-repeat: no-repeat;
   background-position: 86.6% 258px, 0 0;
@@ -129,7 +129,7 @@
 
 @media (max-width: $tablet) {
   .main-block {
-    background-image: url("/img/circuit-boards-tablet.png"), url("/img/background-pattern.png");
+    background-image: url("../img/circuit-boards-tablet.png"), url("../img/background-pattern.png");
     background-size: 314px 385px, cover;
     background-repeat: no-repeat;
     background-position: right 87px, 0 0;
@@ -186,7 +186,7 @@
 
 @media (max-width: $mobile) {
   .main-block {
-    background-image: url("/img/circuit-boards-mobile.png"), url("/img/background-pattern.png");
+    background-image: url("../img/circuit-boards-mobile.png"), url("../img/background-pattern.png");
     background-size: 294px, cover;
     background-repeat: no-repeat;
     background-position: right 83px, 0 0;

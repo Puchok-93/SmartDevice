@@ -52,7 +52,7 @@
     height: 9px;
     bottom: 27px;
     right: 27px;
-    background-image: url("/img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     z-index: 2;
   }
 
@@ -61,19 +61,19 @@
   }
 
   &--circuit-boards {
-    background-image: url("/img/circuit-boards.png");
+    background-image: url("../img/circuit-boards.png");
     background-size: cover;
     opacity: 0.2;
   }
 
   &--installation-circuit-boards {
-    background-image: url("/img/installation-circuit-boards.png");
+    background-image: url("../img/installation-circuit-boards.png");
     background-size: cover;
     opacity: 0.2;
   }
 
   &--component {
-    background-image: url("/img/component.png");
+    background-image: url("../img/component.png");
     background-size: cover;
     opacity: 0.2;
   }
@@ -133,19 +133,19 @@
     opacity: 1;
 
     &--circuit-boards {
-      background-image: url("/img/circuit-boards-tablet-servis.png");
+      background-image: url("../img/circuit-boards-tablet-servis.png");
       background-size: cover;
 
       width: 99%;
     }
 
     &--installation-circuit-boards {
-      background-image: url("/img/installation-circuit-boards-tablet.png");
+      background-image: url("../img/installation-circuit-boards-tablet.png");
       background-size: cover;
     }
 
     &--component {
-      background-image: url("/img/component-tablet.png");
+      background-image: url("../img/component-tablet.png");
       background-size: cover;
     }
 
@@ -200,19 +200,19 @@
     opacity: 1;
 
     &--circuit-boards {
-      background-image: url("/img/circuit-boards-mobile-servis.png");
+      background-image: url("../img/circuit-boards-mobile-servis.png");
       background-size: cover;
 
       width: 98.2%;
     }
 
     &--installation-circuit-boards {
-      background-image: url("/img/installation-circuit-boards-mobile.png");
+      background-image: url("../img/installation-circuit-boards-mobile.png");
       background-size: cover;
     }
 
     &--component {
-      background-image: url("/img/component-mobile.png");
+      background-image: url("../img/component-mobile.png");
       background-size: cover;
     }
 

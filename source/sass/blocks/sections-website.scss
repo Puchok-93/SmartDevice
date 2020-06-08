@@ -106,12 +106,12 @@
     border: none;
     background-color: transparent;
 
-    background-image: url("../img/icon-plus.svg");
+    background-image: url("../img/icon-minus.svg");
     background-size: 16px 16px;
     background-position: center;
 
-    &--open {
-      background-image: url("../img/icon-minus.svg");
+    &--closed {
+      background-image: url("../img/icon-plus.svg");
     }
   }
 }
