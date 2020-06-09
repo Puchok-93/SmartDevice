@@ -59,24 +59,48 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &--circuit-boards {
-    background-image: url("../img/circuit-boards.png");
-    background-size: cover;
-    opacity: 0.2;
-  }
+.services-list__item--circuit-boards {
+  background-image: url("../img/circuit-boards.png");
+  background-size: cover;
+  opacity: 0.2;
+}
 
-  &--installation-circuit-boards {
-    background-image: url("../img/installation-circuit-boards.png");
-    background-size: cover;
-    opacity: 0.2;
-  }
+.no-webp .services-list__item--circuit-boards {
+  background-image: url("../img/circuit-boards.png");
+}
 
-  &--component {
-    background-image: url("../img/component.png");
-    background-size: cover;
-    opacity: 0.2;
-  }
+.webp .services-list__item--circuit-boards {
+  background-image: url("../img/circuit-boards.webp");
+}
+
+.services-list__item--installation-circuit-boards {
+  background-image: url("../img/installation-circuit-boards.png");
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.no-webp .services-list__item--installation-circuit-boards {
+  background-image: url("../img/installation-circuit-boards.png");
+}
+
+.webp .services-list__item--installation-circuit-boards {
+  background-image: url("../img/installation-circuit-boards.webp");
+}
+
+.services-list__item--component {
+  background-image: url("../img/component.png");
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.no-webp .services-list__item--component {
+  background-image: url("../img/component.png");
+}
+
+.webp .services-list__item--component {
+  background-image: url("../img/component.webp");
 }
 
 .services-list__item:hover {
@@ -132,23 +156,6 @@
     margin-bottom: 46px;
     opacity: 1;
 
-    &--circuit-boards {
-      background-image: url("../img/circuit-boards-tablet-servis.png");
-      background-size: cover;
-
-      width: 99%;
-    }
-
-    &--installation-circuit-boards {
-      background-image: url("../img/installation-circuit-boards-tablet.png");
-      background-size: cover;
-    }
-
-    &--component {
-      background-image: url("../img/component-tablet.png");
-      background-size: cover;
-    }
-
     &::before {
       width: 63px;
       height: 63px;
@@ -157,6 +164,46 @@
       background-color: $blue;
       z-index: 1;
     }
+  }
+
+  .services-list__item--circuit-boards {
+    background-image: url("../img/circuit-boards-tablet-servis.png");
+    background-size: cover;
+    width: 99%;
+  }
+
+  .no-webp .services-list__item--circuit-boards {
+    background-image: url("../img/circuit-boards-tablet-servis.png");
+  }
+
+  .webp .services-list__item--circuit-boards {
+    background-image: url("../img/circuit-boards-tablet-servis.webp");
+  }
+
+  .services-list__item--installation-circuit-boards {
+    background-image: url("../img/installation-circuit-boards-tablet.png");
+    background-size: cover;
+  }
+
+  .no-webp .services-list__item--installation-circuit-boards {
+    background-image: url("../img/installation-circuit-boards-tablet.png");
+  }
+
+  .webp .services-list__item--installation-circuit-boards {
+    background-image: url("../img/installation-circuit-boards-tablet.webp");
+  }
+
+  .services-list__item--component {
+    background-image: url("../img/component-tablet.png");
+    background-size: cover;
+  }
+
+  .no-webp .services-list__item--component {
+    background-image: url("../img/component-tablet.png");
+  }
+
+  .webp .services-list__item--component {
+    background-image: url("../img/component-tablet.webp");
   }
 
   .services-list__item--component a span {

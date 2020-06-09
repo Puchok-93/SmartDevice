@@ -93,6 +93,14 @@
   margin-top: 30px;
 }
 
+.callback-popup-form input {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 .callback-popup-form input::placeholder,
 .callback-popup-form textarea::placeholder {
   font-family: $PTMono;
@@ -134,7 +142,7 @@
   align-items: center;
 
   width: 411px;
-  height: 45px;
+  min-height: 45px;
 
   font-family: $RobotoCondensed;
   font-style: normal;
@@ -177,6 +185,7 @@
   opacity: 0.8;
   margin-top: 35px;
   margin-left: 50px;
+  padding-bottom: 25px;
 }
 
 .callback-popup-form__checkbox + .callback-popup-form__label {

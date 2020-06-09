@@ -9,6 +9,14 @@
   background-repeat: no-repeat;
 }
 
+.no-webp .about-company {
+  background-image: url("../img/background-about-company.png");
+}
+
+.webp .about-company {
+  background-image: url("../img/background-about-company.webp");
+}
+
 .about-company__title {
   font-family: $RobotoCondensed;
   font-style: normal;

@@ -2,8 +2,11 @@
   @include list-reset();
 
   display: flex;
+  width: 150px;
   margin-top: 55px;
   margin-left: 12px;
+
+  flex-wrap: wrap;
 }
 
 .social-list__item {
@@ -21,15 +24,16 @@
 
 @media (max-width: $tablet) {
   .social-list {
+    width: 130px;
     margin: 0;
-    margin-right: 3px;
+    margin-right: -16px;
     padding-top: 31px;
   }
 }
 
 @media (max-width: $mobile) {
   .social-list {
-    margin: 0;
+    margin-right: -17px;
     padding-top: 19px;
   }
 }

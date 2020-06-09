@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Компания Smart Device занимается продажей и монтажом печатных плат, а также продажей сопуствующего оборудования">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice - производство печатных плат и электроники</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!--<script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js" async></script>-->
 </head>
 
 <body>
@@ -23,24 +25,18 @@
                 src="img/smart-device-logo-desktop2.png" alt="Логотип SmartDevice">
         </a>
         <nav class="main-navigation">
-          <ul class="contacts-list">
-            <li class="contacts-list__item contacts-list__item--email">
-              <a class="contacts-list__link" href="mailto:info@sd.ru" aria-label="Написать на почту">
+              <a class="contacts-list__link contacts-list__link--email" href="mailto:info@sd.ru" aria-label="Написать на почту">
                 <svg class="contacts-list__link-icon contacts-list__link-icon--email" width="18" height="14">
                   <use xlink:href="../img/sprite_auto.svg#icon-email"></use>
                 </svg>
                 info@sd.ru
               </a>
-            </li>
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a class="contacts-list__link" href="tel:+74950005252" aria-label="Позвонить в компанию">
+              <a class="contacts-list__link contacts-list__link--phone" href="tel:+74950005252" aria-label="Позвонить в компанию">
                 <svg class="contacts-list__link-icon contacts-list__link-icon--phone" width="18" height="14">
                   <use xlink:href="../img/sprite_auto.svg#icon-phone-call"></use>
                 </svg>
                 +7 (495) 000 52 52
               </a>
-            </li>
-          </ul>
           <button class="callback-button" type="button">Заказать звонок</button>
         </nav>
     </header>
@@ -172,7 +168,7 @@
 
         <div class="footer-logo-block">
           <a class="footer-logo" aria-label="Перейти на главную страницу Smart Device">
-            <img class="footer-logo__image" src="img/smart-device-logo-footer.png" width="201" height="52"
+            <img class="footer-logo__image" src="img/smart-device-logo-footer.webp" width="201" height="52"
               alt="Логотип Smart Device">
           </a>
 
@@ -227,6 +223,7 @@
             <li class="sections-website-list__item">
               <a class="sections-website-list__link" href="#">Контакты</a>
             </li>
+
           </ul>
           <button class="sections-website__button" type="button"><span class="visually-hidden">Раскрыть
               список</span></button>
@@ -265,7 +262,7 @@
 
     <form class="callback-popup-form">
       <input type="text" placeholder="Имя" name="user-name" required>
-      <input type="tel" placeholder="Телефон" name="user-phone" required>
+      <input type="tel" placeholder="Телефон" name="user-phone" maxlength="14" required>
       <textarea placeholder="Ваш вопрос" name="user-question"></textarea>
       <button type="submit">Отправить</button>
       <input class="visually-hidden callback-popup-form__checkbox" type="checkbox" id="personal-data-popup" checked>

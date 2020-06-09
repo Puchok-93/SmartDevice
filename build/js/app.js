@@ -16,6 +16,20 @@ var sectionsWebsiteButtonList = document.querySelector('.sections-website__butto
 var ourOfficeList = document.querySelector('.our-office-list');
 var ourOfficeListButton = document.querySelector('.our-office__button');
 
+sectionsWebsiteList.classList.add('hide');
+ourOfficeList.classList.add('hide');
+sectionsWebsiteButtonList.classList.add('sections-website__button--closed');
+ourOfficeListButton.classList.add('our-office__button--closed');
+
+userPhone.addEventListener('focus', function (evt) {
+  evt.preventDefault();
+  userPhone.value = '+7(';
+
+  if (userPhone.length === 6) {
+    userPhone.value.style.color = 'red';
+  }
+});
+
 var ESC_KEY = 27;
 
 var setDefaultValues = function () {
@@ -49,25 +63,23 @@ var reductionDescription = function () {
   }
 };
 
-sectionsWebsiteList.classList.add('hide');
-sectionsWebsiteButtonList.classList.add('sections-website__button--closed');
-
 var openSectionsWebsiteList = function () {
-  sectionsWebsiteList.classList.remove('hide');
-  sectionsWebsiteButtonList.classList.remove('sections-website__button--closed');
+  sectionsWebsiteList.classList.toggle('hide');
+  sectionsWebsiteButtonList.classList.toggle('sections-website__button--closed');
   ourOfficeList.classList.add('hide');
   ourOfficeListButton.classList.add('our-office__button--closed');
 };
 
 var openOurOfficeList = function () {
+  ourOfficeList.classList.toggle('hide');
+  ourOfficeListButton.classList.toggle('our-office__button--closed');
   sectionsWebsiteList.classList.add('hide');
   sectionsWebsiteButtonList.classList.add('sections-website__button--closed');
-  ourOfficeList.classList.remove('hide');
-  ourOfficeListButton.classList.remove('our-office__button--closed');
 };
 
 sectionsWebsiteButtonList.addEventListener('click', openSectionsWebsiteList);
 ourOfficeListButton.addEventListener('click', openOurOfficeList);
+
 window.addEventListener('resize', reductionDescription);
 callbackButton.addEventListener('click', openPopup);
 closePopupButton.addEventListener('click', closePopup);

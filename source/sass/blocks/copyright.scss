@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   padding-top: 60px;
 }
@@ -22,18 +23,22 @@
 }
 
 .copyright__rights {
+  width: 165px;
   margin-left: 11px;
 }
 
 .copyright__working-activity {
-  margin-left: 5.2%;
+  width: 233px;
+  margin-left: 4.2%;
 }
 
 .copyright__confidentiality-conditions {
+  width: 217px;
   margin-left: 10%;
 }
 
 .copyright__developer {
+  width: 192px;
   margin-left: auto;
 }
 
