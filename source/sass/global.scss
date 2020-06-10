@@ -11,3 +11,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.body-lock {
+  overflow-y: scroll;
+  position:fixed;
+}

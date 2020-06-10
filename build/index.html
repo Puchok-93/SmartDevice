@@ -8,6 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice - производство печатных плат и электроники</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/PTMono/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto/roboto-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <!--<script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js" async></script>-->
 </head>
 
@@ -165,7 +169,7 @@
 
         <div class="footer-logo-block">
           <a class="footer-logo" aria-label="Перейти на главную страницу Smart Device">
-            <img class="footer-logo__image" src="img/smart-device-logo-footer.webp" width="201" height="52" alt="Логотип Smart Device">
+            <img class="footer-logo__image" src="img/smart-device-logo-footer.png" width="201" height="52" alt="Логотип Smart Device">
           </a>
 
           <p class="working-activity">1999-2018 SD Service Devices</p>
@@ -258,7 +262,7 @@
 
     <form class="callback-popup-form">
       <input type="text" placeholder="Имя" name="user-name" required="">
-      <input type="tel" placeholder="Телефон" name="user-phone" maxlength="14" required="">
+      <input id="phone" type="tel" placeholder="Телефон" name="user-phone" maxlength="14" required="">
       <textarea placeholder="Ваш вопрос" name="user-question"></textarea>
       <button type="submit">Отправить</button>
       <input class="visually-hidden callback-popup-form__checkbox" type="checkbox" id="personal-data-popup" checked="">
@@ -268,6 +272,7 @@
     <button class="callback-popup__button-close" type="button" aria-label="Закрыть окно заказа обратного звонка"></button>
   </div>
   <div class="callback-popup-overlay"></div>
-  <script src="js/app.js"></script>
+  <!--<script src="js/app.js"></script>-->
+  <script src="js/script.js"></script>
 </body>
 </html>

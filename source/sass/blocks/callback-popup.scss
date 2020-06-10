@@ -1,14 +1,14 @@
-.callback-popup-overlay {
+/*.callback-popup-overlay {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
+  height: 500px;
   position: fixed;
-  width: 100%;
+  width: 500px;
   z-index: 100;
   top: 0;
-  left: 0;
+  left: 2000px;
   display: none;
 }
-
+*/
 .callback-popup-overlay--show {
   display: block;
 }
