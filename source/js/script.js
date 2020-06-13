@@ -96,7 +96,40 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-document.getElementById('phone').addEventListener('input', function (e) {
-  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+
+window.addEventListener('DOMContentLoaded', function() {
+  function setCursorPosition(pos, elem) {
+      elem.focus();
+      if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+      else if (elem.createTextRange) {
+          var range = elem.createTextRange();
+          range.collapse(true);
+          range.moveEnd('character', pos);
+          range.moveStart('character', pos);
+          range.select()
+      }
+  }
+
+  function mask(event) {
+        var matrix = '+7(___)_______',
+            i = 0,
+            def = matrix.replace(/\D/g, ''),
+            val = this.value.replace(/\D/g, '');
+        if (def.length >= val.length) val = def;
+        this.value = matrix.replace(/./g, function(a) {
+            return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
+        });
+        if (event.type == 'blur') {
+            if (this.value.length == 2) this.value = ""
+        } else setCursorPosition(this.value.length, this)
+    };
+    var userPhoneForm = document.querySelector('#tel');
+    var userPhonePopup = form.querySelector('#phone');
+      userPhoneForm.addEventListener('input', mask, false);
+      userPhoneForm.addEventListener('focus', mask, false);
+      userPhoneForm.addEventListener('blur', mask, false);
+
+      userPhonePopup.addEventListener('input', mask, false);
+      userPhonePopup.addEventListener('focus', mask, false);
+      userPhonePopup.addEventListener('blur', mask, false);
 });
