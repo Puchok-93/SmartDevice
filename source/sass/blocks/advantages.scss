@@ -1,5 +1,6 @@
 .advantages {
-  background-image: url("/img/background-advantages.png");
+  background-image: url("../img/background-advantages.png");
+  background-image: url("../img/background-advantages.webp");
   background-size: 1690px 816px;
   background-repeat: no-repeat;
   background-position: 203px 45px;
@@ -8,15 +9,11 @@
   z-index: -2;
 }
 
-
 .advantages-list {
   @include list-reset();
-
   display: flex;
   flex-wrap: wrap;
-
   padding-top: 113px;
-
   margin-left: 135px;
 }
 
@@ -25,7 +22,6 @@
   min-height: 299px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
-
   margin-right: 29px;
   margin-bottom: 28px;
 
@@ -82,10 +78,8 @@
   font-size: 24px;
   line-height: 34px;
   color: $blue;
-
   margin: 0;
   margin-left: 41px;
-
   padding-top: 15px;
 }
 
@@ -96,19 +90,17 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-
   color: #666666;
-
   margin: 0;
   padding-top: 17px;
   padding-bottom: 17px;
   margin-left: 41px;
 }
 
-
 @media (max-width: $tablet) {
   .advantages {
     background-image: url("/img/background-advantages-tablet.png");
+    background-image: url("/img/background-advantages-tablet.webp");
     background-size: 559px 873px;
     background-repeat: no-repeat;
     background-position: right 90px;
@@ -189,10 +181,10 @@
   }
 }
 
-
 @media (max-width: $mobile) {
   .advantages {
     background-image: url("/img/background-advantages-mobile.png");
+    background-image: url("/img/background-advantages-mobile.webp");
     background-size: 320px 873px;
     background-repeat: no-repeat;
     background-position: right 652px;

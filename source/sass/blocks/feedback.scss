@@ -2,16 +2,9 @@
   background-color: $blue;
   padding-bottom: 113px;
   background-image: url("../img/background-feedback.png");
+  background-image: url("../img/background-feedback.webp");
   background-repeat: no-repeat;
   background-position: 196px 94px;
-}
-
-.no-webp .feedback {
-  background-image: url("../img/background-feedback.png");
-}
-
-.webp .feedback {
-  background-image: url("../img/background-feedback.webp");
 }
 
 .feedback__container {

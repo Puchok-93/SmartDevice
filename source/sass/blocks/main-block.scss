@@ -1,19 +1,19 @@
 .main-block {
   background-color: #1b2d37;
   background-image: url("../img/circuit-boards-desktop.png"), url("../img/background-pattern.png");
+  background-image: url("../img/circuit-boards-desktop.webp"), url("../img/background-pattern.webp");
   background-size: 707px, cover;
   background-repeat: no-repeat;
   background-position: 86.6% 258px, 0 0;
   min-height: auto;
-  height: 878px;
-
+  min-height: 878px;
   margin-top: -86px;
 }
 
 .main-block-info {
   width: 60%;
   padding-top: 315px;
-  position: relative;
+  padding-bottom: 80px;
 }
 
 .main-block-info__title {
@@ -99,6 +99,8 @@
 }
 
 .main-block-info__scroll {
+  width: 100px;
+  display: block;
   font-family: $PTMono;
   font-style: normal;
   font-weight: normal;
@@ -110,11 +112,10 @@
   opacity: 0.5;
 
   margin: 0;
+  padding: 0;
+  margin-top: 127px;
+  margin-left: -30px;
   transform: rotate(-90deg);
-  position: absolute;
-
-  bottom: -25%;
-  left: -24px;
 
   &:hover,
   &:focus {
@@ -129,6 +130,7 @@
 @media (max-width: $tablet) {
   .main-block {
     background-image: url("../img/circuit-boards-tablet.png"), url("../img/background-pattern.png");
+    background-image: url("../img/circuit-boards-tablet.webp"), url("../img/background-pattern.webp");
     background-size: 314px 385px, cover;
     background-repeat: no-repeat;
     background-position: right 87px, 0 0;
@@ -186,6 +188,7 @@
 @media (max-width: $mobile) {
   .main-block {
     background-image: url("../img/circuit-boards-mobile.png"), url("../img/background-pattern.png");
+    background-image: url("../img/circuit-boards-mobile.webp"), url("../img/background-pattern.webp");
     background-size: 294px, cover;
     background-repeat: no-repeat;
     background-position: right 83px, 0 0;

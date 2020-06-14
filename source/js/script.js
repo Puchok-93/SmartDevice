@@ -87,6 +87,10 @@ form.addEventListener('submit', function () {
 
 openCallbackButton.addEventListener('click', openPopup);
 closePopupButton.addEventListener('click', closePopup);
+
+sectionsWebsiteButtonList.addEventListener('click', openSectionsWebsiteList);
+ourOfficeListButton.addEventListener('click', openOurOfficeList);
+
 window.addEventListener('resize', reductionDescription);
 callbackPopupOverlay.addEventListener('click', closePopup);
 window.addEventListener('keydown', function (evt) {

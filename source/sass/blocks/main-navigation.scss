@@ -6,8 +6,104 @@
   z-index: 3;
 }
 
+.main-navigation__link {
+  display: block;
+  position: relative;
+  font-family: $PTMono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+
+  text-decoration: none;
+
+  color: $white;
+
+  &--email {
+    margin-right: 120px;
+  }
+
+  &--phone {
+    margin-right: 50px;
+  }
+}
+
+.main-navigation__link-icon--email {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 1px;
+  left: -38px;
+}
+
+.main-navigation__link-icon--phone {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: -2px;
+  left: -32px;
+}
+
 @media (max-width: $tablet) {
   .main-navigation {
     padding-top: 24px;
+  }
+
+  .main-navigation__link {
+    font-size: 0;
+    margin-top: 18px;
+
+    &--email {
+      margin-right: 0;
+    }
+
+    &--phone {
+      margin-right: 50px;
+    }
+  }
+
+  .main-navigation__link-icon--email {
+    width: 35px;
+    height: 18px;
+    top: -13px;
+    left: -41px;
+  }
+
+  .main-navigation__link-icon--phone {
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    top: -16px;
+    left: 18px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-navigation__link {
+    font-size: 0;
+    margin-top: 12px;
+
+    &--email {
+      margin-right: 0;
+    }
+
+    &--phone {
+      margin-right: 50px;
+    }
+  }
+
+  .main-navigation__link-icon--email {
+    width: 35px;
+    height: 18px;
+    top: -10px;
+    left: -23px;
+  }
+
+  .main-navigation__link-icon--phone {
+    position: absolute;
+    width: 32px;
+    height: 24px;
+    top: -14px;
+    left: 28px;
   }
 }

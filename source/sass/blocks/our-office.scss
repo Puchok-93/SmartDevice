@@ -85,7 +85,7 @@
     display: block;
     position: absolute;
     width: 16px;
-    height: 16px;
+    height: 2px;
     top: 56px;
     right: 17px;
 
@@ -94,11 +94,14 @@
     background-color: transparent;
 
     background-image: url("../img/icon-minus.svg");
-    background-size: 16px 16px;
+    background-size: 2px 2px;
     background-position: center;
 
     &--closed {
       background-image: url("../img/icon-plus.svg");
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
     }
   }
 }
