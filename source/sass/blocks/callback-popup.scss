@@ -17,7 +17,7 @@
   width: 490px;
   min-height: 605px;
   top: 14%;
-  left: 37.55%;
+  left: calc(50% - 490px/2);
   position: fixed;
   z-index: 1000;
   background-color: $blue;
