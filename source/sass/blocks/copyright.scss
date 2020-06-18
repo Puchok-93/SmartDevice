@@ -35,6 +35,17 @@
 .copyright__confidentiality-conditions {
   width: 217px;
   margin-left: 10%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .copyright__developer {

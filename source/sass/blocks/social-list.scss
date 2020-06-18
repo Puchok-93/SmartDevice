@@ -20,6 +20,16 @@
 .social-list__icon {
   width: 27px;
   height: 27px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    border-radius: 50%;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $tablet) {

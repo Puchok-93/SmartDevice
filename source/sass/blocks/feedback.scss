@@ -1,20 +1,46 @@
 .feedback {
   background-color: $blue;
   padding-bottom: 113px;
-  background-image: url("../img/background-feedback.png");
-  background-image: url("../img/background-feedback.webp");
+
+  background-image: url("../img/background-feedback2.png");
   background-repeat: no-repeat;
-  background-position: 196px 94px;
+  background-position: 196px 93px;
 }
 
 .feedback__container {
   display: flex;
+}
+
+.feedback__form-block {
+  width: 60%;
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
+}
+
+.feedback-image {
+  display: block;
+  margin-right: 25px;
+  margin-left: auto;
+  margin-top: 161px;
+}
+
+.feedback__image-container {
+  width: 50%;
+}
+
+.feedback__inputs-block {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__button-block {
+  width: 96%;
+  display: flex;
 }
 
 .feedback__title {
-  width: 545px;
+  width: 85%;
   font-family: $RobotoCondensed;
   font-style: normal;
   font-weight: normal;
@@ -24,7 +50,7 @@
   color: $white;
 
   margin: 0;
-  margin-right: 149px;
+  margin-left: 11%;
 
   padding-top: 91px;
 }
@@ -40,7 +66,7 @@
   color: $white;
 
   margin: 0;
-  margin-right: 372px;
+  margin-left: 11.6%;
 
   padding-top: 10px;
 }
@@ -48,29 +74,35 @@
 .feedback__form {
   display: flex;
   flex-wrap: wrap;
-
-  width: 600px;
+  position: relative;
+  width: 77%;
 
   padding-top: 51px;
-  margin-right: 88px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feedback__form p {
+  margin: 0;
 }
 
 .feedback__form input[type="text"],
 .feedback__form input[type="tel"] {
-  height: 50px;
-
   font-family: $PTMono;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   border: none;
   outline: none;
   color: $white;
   background-color: rgba(25, 186, 255, 0.9);
   margin-bottom: 19px;
+  -webkit-border-radius: 0;
 
   &:focus {
     outline: 1px solid $white;
@@ -78,19 +110,11 @@
 }
 
 .feedback__form input[type="text"] {
-  width: 252px;
+  width: 44%;
 }
 
 .feedback__form input[type="tel"] {
-  width: 252px;
-}
-
-.feedback__form input {
-  margin-right: 30px;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
+  width: 44%;
 }
 
 .feedback__form input::placeholder,
@@ -104,7 +128,7 @@
 }
 
 .feedback__form textarea {
-  width: 551px;
+  width: 93%;
   height: 140px;
 
   font-family: $PTMono;
@@ -133,7 +157,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 270px;
+  width: 47%;
   min-height: 45px;
 
   font-family: $RobotoCondensed;
@@ -154,7 +178,7 @@
   color: $white;
   cursor: pointer;
 
-  margin-top: 42px;
+  margin-top: 44px;
 
   &:hover,
   &:focus {
@@ -167,8 +191,14 @@
   }
 }
 
+.feedback__checkbox {
+  position: absolute;
+  top: 350px;
+  left: 312px;
+}
+
 .feedback__label {
-  width: 200px;
+  width: 40%;
   font-family: $PTMono;
   font-style: normal;
   font-weight: normal;
@@ -178,7 +208,7 @@
   color: $white;
 
   opacity: 0.8;
-  margin-top: 50px;
+  margin-top: 51px;
   margin-left: 70px;
 }
 
@@ -208,8 +238,18 @@
 
 @media (max-width: $tablet) {
   .feedback {
-    padding-bottom: 105px;
+    padding-bottom: 106px;
     background-image: none;
+  }
+
+  .feedback__form-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__image-container {
+    display: none;
   }
 
   .feedback__container {
@@ -217,6 +257,7 @@
   }
 
   .feedback__title {
+    width: 565px;
     font-size: 32px;
     line-height: 45px;
 
@@ -233,31 +274,30 @@
   }
 
   .feedback__form {
-    width: 100%;
+    width: 95%;
 
-    padding-top: 53px;
+    padding-top: 54px;
     margin: 0;
   }
 
   .feedback__form input[type="text"] {
-    width: 36%;
+    width: 39.5%;
     margin-left: 72px;
     margin-right: 32px;
   }
 
   .feedback__form input[type="tel"] {
-    width: 36%;
+    width: 39.5%;
   }
 
   .feedback__form textarea {
-    width: 78.7%;
+    width: 83%;
     height: 144px;
     margin-left: 72px;
     margin-top: 23px;
   }
 
   .feedback__form button[type="submit"] {
-    width: 279px;
     margin-left: 72px;
     margin-top: 45px;
   }
@@ -276,6 +316,15 @@
   .feedback {
     padding-bottom: 28px;
     background-image: none;
+  }
+
+  .feedback__inputs-block {
+    flex-direction: column;
+  }
+
+  .feedback__button-block {
+    width: 100%;
+    flex-direction: column;
   }
 
   .feedback__title {
@@ -303,13 +352,13 @@
   }
 
   .feedback__form input[type="text"] {
-    width: 94%;
+    width: 98%;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .feedback__form input[type="tel"] {
-    width: 94%;
+    width: 98%;
     margin: 0;
     margin-bottom: 30px;
   }
@@ -321,13 +370,21 @@
   }
 
   .feedback__form button[type="submit"] {
-    width: 290px;
+    width: 100%;
+    //width: 200px;
     height: 46px;
     margin: 0;
-    margin-top: 29px;
+    margin-top: 31px;
+  }
+
+  .feedback__checkbox {
+    top: 0;
+    left: 0;
   }
 
   .feedback__label {
+    width: 80%;
+    margin: 0;
     margin-top: 30px;
     margin-left: 35px;
   }

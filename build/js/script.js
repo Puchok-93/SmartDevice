@@ -20,6 +20,9 @@ var sectionsWebsiteButtonList = document.querySelector('.sections-website__butto
 var ourOfficeList = document.querySelector('.our-office-list');
 var ourOfficeListButton = document.querySelector('.our-office__button');
 
+var sectionsWebsite = document.querySelector('.sections-website');
+var ourOffice = document.querySelector('.our-office');
+
 var ESC_KEY = 27;
 
 sectionsWebsiteList.classList.add('hide');
@@ -57,13 +60,13 @@ var closePopup = function (evt) {
   window.scrollTo(0,body.dataset.scrollY)
   setDefaultValues();
 };
-
+/*
 var reductionDescription = function () {
   if (window.matchMedia('screen and (min-width: 1023px)').matches) {
     companyDescription.textContent = 'Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. ' +
     'Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..';
   }
-};
+};*/
 
 var openSectionsWebsiteList = function () {
   sectionsWebsiteList.classList.toggle('hide');
@@ -88,10 +91,11 @@ form.addEventListener('submit', function () {
 openCallbackButton.addEventListener('click', openPopup);
 closePopupButton.addEventListener('click', closePopup);
 
-sectionsWebsiteButtonList.addEventListener('click', openSectionsWebsiteList);
-ourOfficeListButton.addEventListener('click', openOurOfficeList);
+sectionsWebsite.addEventListener('click', openSectionsWebsiteList);
+ourOffice.addEventListener('click', openOurOfficeList);
 
-window.addEventListener('resize', reductionDescription);
+
+/*window.addEventListener('resize', reductionDescription);*/
 callbackPopupOverlay.addEventListener('click', closePopup);
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === ESC_KEY) {

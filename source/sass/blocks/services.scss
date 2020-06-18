@@ -63,21 +63,18 @@
 
 .services-list__item--circuit-boards {
   background-image: url("../img/circuit-boards.png");
-  background-image: url("../img/circuit-boards.webp");
   background-size: cover;
   opacity: 0.2;
 }
 
 .services-list__item--installation-circuit-boards {
   background-image: url("../img/installation-circuit-boards.png");
-  background-image: url("../img/installation-circuit-boards.webp");
   background-size: cover;
   opacity: 0.2;
 }
 
 .services-list__item--component {
   background-image: url("../img/component.png");
-  background-image: url("../img/component.webp");
   background-size: cover;
   opacity: 0.2;
 }
@@ -146,20 +143,17 @@
 
   .services-list__item--circuit-boards {
     background-image: url("../img/circuit-boards-tablet-servis.png");
-    background-image: url("../img/circuit-boards-tablet-servis.webp");
     background-size: cover;
     width: 99%;
   }
 
   .services-list__item--installation-circuit-boards {
     background-image: url("../img/installation-circuit-boards-tablet.png");
-    background-image: url("../img/installation-circuit-boards-tablet.webp");
     background-size: cover;
   }
 
   .services-list__item--component {
     background-image: url("../img/component-tablet.png");
-    background-image: url("../img/component-tablet.webp");
     background-size: cover;
   }
 
@@ -205,7 +199,6 @@
 
     &--circuit-boards {
       background-image: url("../img/circuit-boards-mobile-servis.png");
-      background-image: url("../img/circuit-boards-mobile-servis.webp");
       background-size: cover;
 
       width: 98.2%;
@@ -213,13 +206,11 @@
 
     &--installation-circuit-boards {
       background-image: url("../img/installation-circuit-boards-mobile.png");
-      background-image: url("../img/installation-circuit-boards-mobile.webp");
       background-size: cover;
     }
 
     &--component {
       background-image: url("../img/component-mobile.png");
-      background-image: url("../img/component-mobile.webp");
       background-size: cover;
     }
 

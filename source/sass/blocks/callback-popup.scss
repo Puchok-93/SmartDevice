@@ -16,8 +16,8 @@
 .callback-popup {
   width: 490px;
   min-height: 605px;
-  top: 14.4%;
-  left: 37.5%;
+  top: 14%;
+  left: 37.55%;
   position: fixed;
   z-index: 1000;
   background-color: $blue;
@@ -171,6 +171,11 @@
   }
 }
 
+.callback-popup-form__checkbox {
+  position: absolute;
+  top: 522px;
+  left: 45px;
+}
 
 .callback-popup-form__label {
   width: 337px;

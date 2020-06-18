@@ -3,7 +3,6 @@
   padding-top: 200px;
   margin-top: -300px;
   background-image: url("../img/background-about-company.png");
-  background-image: url("../img/background-about-company.webp");
   background-size: 302px 560px;
   background-position: 0 30px;
   background-repeat: no-repeat;
@@ -29,7 +28,6 @@
     top: 79px;
     left: -209px;
     background-image: url("../img/year-desktop.png");
-    background-image: url("../img/year-desktop.webp");
   }
 }
 
@@ -44,6 +42,10 @@
   margin: 0;
   margin-left: 22.1%;
   padding-top: 20.6px;
+}
+
+.about-company__description-dotted {
+  display: none;
 }
 
 .about-company__link {
@@ -103,7 +105,6 @@
       top: 23px;
       left: -210px;
       background-image: url("../img/year-tablet.png");
-      background-image: url("../img/year-tablet.webp");
     }
   }
 
@@ -112,6 +113,14 @@
     margin: 0;
     margin-left: 26.5%;
     padding-top: 21.7px;
+  }
+
+  .about-company__description span {
+    display: none;
+  }
+
+  .about-company__description-dotted {
+    display: block;
   }
 
   .about-company__link {

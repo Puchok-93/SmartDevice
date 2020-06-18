@@ -4,41 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Компания Smart Device занимается продажей и монтажом печатных плат, а также продажей сопуствующего оборудования">
+  <meta name="description"
+    content="Компания Smart Device занимается продажей и монтажом печатных плат, а также продажей сопуствующего оборудования">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SmartDevice - производство печатных плат и электроники</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
-    <include style="display: none" src="build/img/sprite_auto.svg"></include>
+  <include style="display: none" src="build/img/sprite_auto.svg"></include>
   <div class="content">
     <header>
-        <a class="header-logo" aria-label="Перейти на главную страницу Smart Device">
-          <img class="header-logo__image"
-                srcset="img/smart-device-logo-mobile.png 38w,
-                        img/smart-device-logo-desktop2.png 201w"
-                sizes="(max-width: 767px) 38px,
-                      (max-width: 1023px) 201px,
-                      (min-width: 1024px) 201px,
-                      201px"
-                src="img/smart-device-logo-desktop2.png" alt="Логотип SmartDevice">
+      <a class="header-logo" aria-label="Перейти на главную страницу Smart Device">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/smart-device-logo-desktop.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/smart-device-logo-desktop.webp">
+          <source type="image/webp" srcset="img/smart-device-logo-mobile.webp">
+
+          <source media="(min-width: 1024px)" srcset="img/smart-device-logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/smart-device-logo-desktop.png">
+          <img class="header-logo__image" src="img/smart-device-logo-mobile.png" width="38" height="38"
+            alt="Логотип Smart Device">
+        </picture>
+      </a>
+      <nav class="main-navigation">
+        <a class="main-navigation__link main-navigation__link--email" href="mailto:info@sd.ru"
+          aria-label="Написать на почту">
+          <svg class="main-navigation__link-icon main-navigation__link-icon--email" width="18" height="14">
+            <use xlink:href="#icon-email"></use>
+          </svg>
+          info@sd.ru
         </a>
-        <nav class="main-navigation">
-              <a class="main-navigation__link main-navigation__link--email" href="mailto:info@sd.ru" aria-label="Написать на почту">
-                <svg class="main-navigation__link-icon main-navigation__link-icon--email" width="18" height="14">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-                info@sd.ru
-              </a>
-              <a class="main-navigation__link main-navigation__link--phone" href="tel:+74950005252" aria-label="Позвонить в компанию">
-                <svg class="main-navigation__link-icon main-navigation__link-icon--phone" width="18" height="14">
-                  <use xlink:href="#icon-phone-call"></use>
-                </svg>
-                +7 (495) 000 52 52
-              </a>
-          <button class="callback-button" type="button">Заказать звонок</button>
-        </nav>
+        <a class="main-navigation__link main-navigation__link--phone" href="tel:+74950005252"
+          aria-label="Позвонить в компанию">
+          <svg class="main-navigation__link-icon main-navigation__link-icon--phone" width="18" height="14">
+            <use xlink:href="#icon-phone-call"></use>
+          </svg>
+          +7 (495) 000 52 52
+        </a>
+        <button class="callback-button" type="button">Заказать звонок</button>
+      </nav>
     </header>
 
     <main>
@@ -112,9 +121,10 @@
             производители
             электронных компонентов: OSRAM,
             CREE, HOLGLITRONIC, REFOND.
-            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-            Среди наших клиентов крупнейшие Производители светотехники России.
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span
+              class="about-company__description-dotted">..</span><span>(РЖД),
+              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+              Среди наших клиентов крупнейшие Производители светотехники России.</span>
           </p>
           <a class="about-company__link" href="#">Подробнее</a>
         </div>
@@ -146,16 +156,33 @@
       <section class="feedback" id="feedback">
         <div class="wrapper wrapper--feedback">
           <div class="feedback__container">
-            <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
-            <p class="feedback__subtitle">Мы проконсультируем Вас бесплатно</p>
-            <form class="feedback__form">
-              <input type="text" placeholder="Имя" required>
-              <input type="tel" placeholder="Телефон" name="user-phone" id="tel" maxlength="14" required>
-              <textarea placeholder="Ваш вопрос"></textarea>
-              <button type="submit">Задать вопрос</button>
-              <input class="visually-hidden feedback__checkbox" type="checkbox" id="personal-data" checked>
-              <label class="feedback__label" for="personal-data">Я согласен на обработку персональных данных</label>
-            </form>
+            <div class="feedback__image-container">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/paper-airplane.webp">
+                <img class="feedback-image" src="../img/paper-airplane.png" width="511" height="288"
+                  alt="Изображение бумажного самолетика">
+              </picture>
+            </div>
+            <div class="feedback__form-block">
+              <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+              <p class="feedback__subtitle">Мы проконсультируем Вас бесплатно</p>
+              <form class="feedback__form">
+                <div class="feedback__inputs-block">
+                  <input type="text" placeholder="Имя" id="name" required>
+                  <label for="name" class="visually-hidden">Имя</label>
+                  <input type="tel" placeholder="Телефон" name="user-phone" id="tel" maxlength="14" required>
+                  <label for="tel" class="visually-hidden">Телефон</label>
+                </div>
+
+                <textarea placeholder="Ваш вопрос" id="question"></textarea>
+                <label for="question" class="visually-hidden">Ваш вопрос</label>
+                <div class="feedback__button-block">
+                  <button type="submit">Задать вопрос</button>
+                  <input class="visually-hidden feedback__checkbox" type="checkbox" id="personal-data" checked required>
+                  <label class="feedback__label" for="personal-data">Я согласен на обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -261,18 +288,19 @@
     <p class="callback-popup__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
     <form class="callback-popup-form">
-      <input type="text" placeholder="Имя" name="user-name" required>
+      <input type="text" placeholder="Имя" name="user-name" id="name-popup" required>
       <input id="phone" type="tel" placeholder="Телефон" name="user-phone" maxlength="14" required>
-      <textarea placeholder="Ваш вопрос" name="user-question"></textarea>
+      <textarea placeholder="Ваш вопрос" name="user-question" id="question-popup"></textarea>
       <button type="submit">Отправить</button>
-      <input class="visually-hidden callback-popup-form__checkbox" type="checkbox" id="personal-data-popup" checked>
+      <input class="visually-hidden callback-popup-form__checkbox" type="checkbox" id="personal-data-popup" checked
+        required>
       <label class="callback-popup-form__label" for="personal-data-popup">Я согласен на обработку персональных
         данных</label>
     </form>
-    <button class="callback-popup__button-close" type="button" aria-label="Закрыть окно заказа обратного звонка"></button>
+    <button class="callback-popup__button-close" type="button"
+      aria-label="Закрыть окно заказа обратного звонка"></button>
   </div>
   <div class="callback-popup-overlay"></div>
   <script src="js/script.js"></script>
-</body>
 </body>
 </html>

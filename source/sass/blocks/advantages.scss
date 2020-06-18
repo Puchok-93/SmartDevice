@@ -1,6 +1,5 @@
 .advantages {
   background-image: url("../img/background-advantages.png");
-  background-image: url("../img/background-advantages.webp");
   background-size: 1690px 816px;
   background-repeat: no-repeat;
   background-position: 203px 45px;
@@ -100,7 +99,6 @@
 @media (max-width: $tablet) {
   .advantages {
     background-image: url("/img/background-advantages-tablet.png");
-    background-image: url("/img/background-advantages-tablet.webp");
     background-size: 559px 873px;
     background-repeat: no-repeat;
     background-position: right 90px;
@@ -184,7 +182,6 @@
 @media (max-width: $mobile) {
   .advantages {
     background-image: url("/img/background-advantages-mobile.png");
-    background-image: url("/img/background-advantages-mobile.webp");
     background-size: 320px 873px;
     background-repeat: no-repeat;
     background-position: right 652px;
