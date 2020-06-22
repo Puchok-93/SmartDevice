@@ -182,11 +182,10 @@
   }
 }
 
-
 @media (max-width: $mobile) {
   .main-block {
     background-image: url("../img/circuit-boards-mobile.png"), url("../img/background-pattern.png");
-    background-size: 294px, cover;
+    background-size: 91%, cover;
     background-repeat: no-repeat;
     background-position: right 83px, 0 0;
     min-height: auto;
